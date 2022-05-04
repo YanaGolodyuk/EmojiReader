@@ -13,7 +13,9 @@
 		8401812F2821D0170047D50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8401812E2821D0170047D50F /* Assets.xcassets */; };
 		840181322821D0170047D50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840181302821D0170047D50F /* LaunchScreen.storyboard */; };
 		8401813E2821DB5F0047D50F /* EmojiTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401813D2821DB5F0047D50F /* EmojiTVC.swift */; };
-		840181402821DE8B0047D50F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401813F2821DE8B0047D50F /* GradientView.swift */; };
+		840181432821EB900047D50F /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840181422821EB900047D50F /* EmojiTableViewCell.swift */; };
+		840181462821EE630047D50F /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840181452821EE630047D50F /* EmojiModel.swift */; };
+		84018148282203200047D50F /* NewEmojiTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84018147282203200047D50F /* NewEmojiTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		840181312821D0170047D50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840181332821D0170047D50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8401813D2821DB5F0047D50F /* EmojiTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTVC.swift; sourceTree = "<group>"; };
-		8401813F2821DE8B0047D50F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		840181422821EB900047D50F /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		840181452821EE630047D50F /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		84018147282203200047D50F /* NewEmojiTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmojiTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +62,12 @@
 		840181242821D0100047D50F /* EmojiReader */ = {
 			isa = PBXGroup;
 			children = (
-				840181392821D03E0047D50F /* Delegate */,
+				840181442821EE170047D50F /* Model */,
 				8401813B2821D06C0047D50F /* Controllers */,
 				8401813A2821D05F0047D50F /* Views */,
-				8401813C2821D07B0047D50F /* Sourses */,
+				8401813C2821D07B0047D50F /* Sources */,
+				840181392821D03E0047D50F /* Delegate */,
 				840181332821D0170047D50F /* Info.plist */,
-				8401813F2821DE8B0047D50F /* GradientView.swift */,
 			);
 			path = EmojiReader;
 			sourceTree = "<group>";
@@ -90,16 +94,34 @@
 			isa = PBXGroup;
 			children = (
 				8401813D2821DB5F0047D50F /* EmojiTVC.swift */,
+				84018147282203200047D50F /* NewEmojiTVC.swift */,
+				840181412821EB670047D50F /* Cells */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		8401813C2821D07B0047D50F /* Sourses */ = {
+		8401813C2821D07B0047D50F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				8401812E2821D0170047D50F /* Assets.xcassets */,
 			);
-			path = Sourses;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		840181412821EB670047D50F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				840181422821EB900047D50F /* EmojiTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		840181442821EE170047D50F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				840181452821EE630047D50F /* EmojiModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840181402821DE8B0047D50F /* GradientView.swift in Sources */,
 				840181262821D0100047D50F /* AppDelegate.swift in Sources */,
+				84018148282203200047D50F /* NewEmojiTVC.swift in Sources */,
+				840181462821EE630047D50F /* EmojiModel.swift in Sources */,
+				840181432821EB900047D50F /* EmojiTableViewCell.swift in Sources */,
 				8401813E2821DB5F0047D50F /* EmojiTVC.swift in Sources */,
 				840181282821D0100047D50F /* SceneDelegate.swift in Sources */,
 			);
